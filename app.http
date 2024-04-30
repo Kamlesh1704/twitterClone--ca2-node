@@ -1,0 +1,31 @@
+POST http://localhost:3000/register/
+Content-Type:application/json
+{
+  "username": "ada_ich",
+  "password": "ricard567",
+  "name": "am Rcard",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/login/
+Content-Type:application/json
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+GET http://localhost:3000/user/tweets/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEzMzQ2MTcxfQ.toFO-lEn73wjw0Zhl9srXAympvnnsN6DMdZaq1BI6EU
+###
+GET http://localhost:3000/user/tweets/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzA0NTY2MTE4fQ.-Z8llzXjxTiUuX2QHdi_GtUnSuU4Qaw5uSZFhVlQgV4
+###
+POST http://localhost:3000/user/tweets/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEzMzYxOTY5fQ.RPG30GJuuTktTXGl4eocsIBaPGdcyPKdYGmwUZb8sro
+Content-Type:application/json
+{
+   "tweet": "The Mornings..."
+}
+###
+DELETE http://localhost:3000/tweets/1/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEzMzYxOTY5fQ.RPG30GJuuTktTXGl4eocsIBaPGdcyPKdYGmwUZb8sro
